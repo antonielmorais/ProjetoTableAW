@@ -1,0 +1,209 @@
+/* Resetando algumas configurações padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que a página ocupe pelo menos a altura total da tela */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Seção de desenvolvedores */
+.devs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.dev {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.dev:hover {
+    transform: scale(1.05);
+}
+
+.dev img {
+    width: 100%;
+    height: 300px; /* Definindo altura fixa para garantir consistência */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área */
+    border-radius: 8px;
+}
+
+.dev h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.dev p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Estilo para o formulário de cadastro */
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4CAF50; /* Cor verde ao focar no campo */
+    background-color: #e8f5e9; /* Fundo suavemente alterado */
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #4CAF50; /* Cor verde */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+table td {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background-color: #e8f5e9; /* Cor de fundo ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px; /* Adicionado para garantir que o rodapé não sobreponha os outros elementos */
+    flex-shrink: 0; /* Garante que o rodapé não encolha */
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
